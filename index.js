@@ -10,7 +10,7 @@ const fs = require("fs");
 mongoose.set('strictQuery', true);
 dotenv.config();
 mongoose
-  .connect(process.env.MONGO_URL || process.env.MONGO_URL_DOCKER, {
+  .connect(process.env.MONGO_URL, {
     dbName: "local",
     useUnifiedTopology: true,
     useNewUrlParser: true,
